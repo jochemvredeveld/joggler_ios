@@ -11,6 +11,12 @@
 		BEF4E87429B526C00035535F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF4E87329B526C00035535F /* ContentView.swift */; };
 		BEF4E87629B526C90035535F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEF4E87529B526C90035535F /* Assets.xcassets */; };
 		BEF4E87929B526C90035535F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEF4E87829B526C90035535F /* Preview Assets.xcassets */; };
+		BEF4E88029B534B00035535F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BEF4E87F29B534B00035535F /* GoogleService-Info.plist */; };
+		BEF4E88429B536620035535F /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = BEF4E88329B536620035535F /* FirebaseAnalytics */; };
+		BEF4E88629B536620035535F /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = BEF4E88529B536620035535F /* FirebaseAuth */; };
+		BEF4E88929B53C7E0035535F /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF4E88829B53C7E0035535F /* AuthViewModel.swift */; };
+		BEF4E88B29B53EF30035535F /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF4E88A29B53EF30035535F /* SignUpView.swift */; };
+		BEF4E88D29B53F090035535F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF4E88C29B53F090035535F /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		BEF4E87329B526C00035535F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BEF4E87529B526C90035535F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BEF4E87829B526C90035535F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BEF4E87F29B534B00035535F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BEF4E88129B534BB0035535F /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BEF4E88729B53B750035535F /* joggler-ios-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "joggler-ios-Info.plist"; sourceTree = SOURCE_ROOT; };
+		BEF4E88829B53C7E0035535F /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		BEF4E88A29B53EF30035535F /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		BEF4E88C29B53F090035535F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +38,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEF4E88429B536620035535F /* FirebaseAnalytics in Frameworks */,
+				BEF4E88629B536620035535F /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,6 +49,7 @@
 		BEF4E86529B526C00035535F = {
 			isa = PBXGroup;
 			children = (
+				BEF4E88129B534BB0035535F /* GoogleService-Info.plist */,
 				BEF4E87029B526C00035535F /* joggler_ios */,
 				BEF4E86F29B526C00035535F /* Products */,
 			);
@@ -51,8 +66,12 @@
 		BEF4E87029B526C00035535F /* joggler_ios */ = {
 			isa = PBXGroup;
 			children = (
+				BEF4E88729B53B750035535F /* joggler-ios-Info.plist */,
 				BEF4E87129B526C00035535F /* joggler_iosApp.swift */,
 				BEF4E87329B526C00035535F /* ContentView.swift */,
+				BEF4E88829B53C7E0035535F /* AuthViewModel.swift */,
+				BEF4E88A29B53EF30035535F /* SignUpView.swift */,
+				BEF4E88C29B53F090035535F /* MainView.swift */,
 				BEF4E87529B526C90035535F /* Assets.xcassets */,
 				BEF4E87729B526C90035535F /* Preview Content */,
 			);
@@ -62,6 +81,7 @@
 		BEF4E87729B526C90035535F /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				BEF4E87F29B534B00035535F /* GoogleService-Info.plist */,
 				BEF4E87829B526C90035535F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -83,6 +103,10 @@
 			dependencies = (
 			);
 			name = joggler_ios;
+			packageProductDependencies = (
+				BEF4E88329B536620035535F /* FirebaseAnalytics */,
+				BEF4E88529B536620035535F /* FirebaseAuth */,
+			);
 			productName = joggler_ios;
 			productReference = BEF4E86E29B526C00035535F /* joggler_ios.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +135,9 @@
 				Base,
 			);
 			mainGroup = BEF4E86529B526C00035535F;
+			packageReferences = (
+				BEF4E88229B536620035535F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = BEF4E86F29B526C00035535F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +154,7 @@
 			files = (
 				BEF4E87929B526C90035535F /* Preview Assets.xcassets in Resources */,
 				BEF4E87629B526C90035535F /* Assets.xcassets in Resources */,
+				BEF4E88029B534B00035535F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +165,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEF4E88B29B53EF30035535F /* SignUpView.swift in Sources */,
 				BEF4E87429B526C00035535F /* ContentView.swift in Sources */,
 				BEF4E87229B526C00035535F /* joggler_iosApp.swift in Sources */,
+				BEF4E88D29B53F090035535F /* MainView.swift in Sources */,
+				BEF4E88929B53C7E0035535F /* AuthViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +301,7 @@
 				DEVELOPMENT_TEAM = 4GB7G79VUT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "joggler-ios-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +331,7 @@
 				DEVELOPMENT_TEAM = 4GB7G79VUT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "joggler-ios-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -339,6 +372,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BEF4E88229B536620035535F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BEF4E88329B536620035535F /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BEF4E88229B536620035535F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		BEF4E88529B536620035535F /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BEF4E88229B536620035535F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BEF4E86629B526C00035535F /* Project object */;
 }
